@@ -92,7 +92,7 @@
 
                     <li><a href="#email">Email</a></li>
                     <li><a href="#jabber">Jabber</a></li>
-                    <li><a href="#res">Further Resources</a></li>
+                    <li><a href="#res">Recommended Reading</a></li>
 
 				</ul>
 			</div>
@@ -205,7 +205,8 @@
               <ul>
                   <li><strong>Linux:</strong> Open the Terminal <img src="img/linuxmint/linuxmint_terminal.png"> (Linux Mint: in the bar on the bottom left). Type <code>thunderbird -P</code> and press <kbd>Enter</kbd> .</li>
                   <li><strong>Windows:</strong> Select <code>Start > Run...</code> from the Windows Start menu. Enter <code>thunderbird -P</code> and press <code>Ok</code> . [TODO][Not verified!]</li>
-                  <li><strong>Mac:</strong> [TODO]</li>
+                  <li><strong>Mac:</strong> Open the Console. Type <code>/Applications/Thunderbird.app/Contents/MacOS/thunderbird-bin
+                          -profilemanager</code> and press <kbd>Enter</kbd> .</li>
               </ul>
           </li>
           <li>
@@ -277,6 +278,10 @@
 
       <p>Jabber + OTR (Off-the-record encryption) is the equivalent to Email + PGP for chatting. You can choose between different applications on your computer and smartphone to use it. OTR similar to PGP provides End-to-End encryption. This means, that even the server you use to communicate with others can not read your messages. Different to Email both parties have to be online and (with Tor Messenger) per default no chat history is saved.</p>
 
+      <div class="alert alert-warning" role="alert">
+        <strong>Tor Messenger is new software and there has not been a security audit yet. Still we think that it is safer to use than pidgin. Take our advice with a grain of salt.</strong>
+      </div> 
+
         <h3>Installing Tor Messenger on Linux</h3>
         <ol>
             <li>Open <a href="https://trac.torproject.org/projects/tor/wiki/doc/TorMessenger">this link</a> to the website of Tor Messenger. Download and save the Linux (64-bit) version of Tor Messenger and both files starting with sha256sums to your Downloads directory.</li>
@@ -319,54 +324,6 @@
 
         <p><strong>Small hint:</strong> If you are the one getting a contact request there is one more thing you should do after you clicked on <samp>Allow</samp> and your contact texted you. In the chat window right-click on your contacts jabber address and click <samp>Add Contact... &gt; Contacts</samp>. Only then can you see your contacts online status.</p>
 
-      <h3>Desktop clients</h3>
-
-      <div class="alert alert-warning" role="alert">
-        <strong>Tor Messenger and CoyIM is new software and there has not been a security audit yet. Still we think that they are safer to use than pidgin. Take our advice with a grain of salt.</strong>
-      </div> 
-
-      <div class="row">
-	      
-        <div class="col-sm-4">
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Tor Messenger (beta)</h3>
-            </div>
-            <div class="panel-body">
-              <p><img src="img/tools/XXXXXXXXXXXXXXXXXX" alt="" align="right" style="margin-left:5px;"></p>
-              
-              <p><a href="https://trac.torproject.org/projects/tor/wiki/doc/TorMessenger" target="_blank"><button type="button" class="btn btn-info">Website on torproject.org</button></a></p>
-              <p>Available for: Linux, Windows, Mac</p>          
-            </div>
-          </div>
-        </div><!-- /.col-sm-4 -->  
-        <div class="col-sm-4">
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">CoyIM (unaudited)</h3>
-            </div>
-            <div class="panel-body">
-              <p><img src="img/tools/XXXXXXXXXXXXXXXXXX" alt="" align="right" style="margin-left:5px;"></p>
-              
-              <p><a href="https://coy.im/" target="_blank"><button type="button" class="btn btn-info">Website: coy.im</button></a></p>
-              <p>Available for: Linux, Windows, Mac</p>          
-            </div>
-          </div>
-        </div><!-- /.col-sm-4 -->            
-        <div class="col-sm-4">
-          <div class="panel panel-warning">
-            <div class="panel-heading">
-              <h3 class="panel-title">Pidgin + OTR</h3>
-            </div>
-            <div class="panel-body">
-              <p><img src="img/tools/XXXXXXXXXXXXXXXXXX" alt="" align="right" style="margin-left:5px;"></p>
-              
-              <p><a href="https://pidgin.im/" target="_blank"><button type="button" class="btn btn-warning">Website: pidgin.im</button></a></p>
-              <p>Available for: Linux, Windows, Mac</p>          
-            </div>
-          </div>
-        </div><!-- /.col-sm-4 -->            
-      </div>      
 
       <h3>Mobile clients</h3> 
 
@@ -396,7 +353,7 @@
               <h3 class="panel-title">ChatSecure</h3>
             </div>
             <div class="panel-body">
-              <p><img src="img/tools/XXXXXXXXXXXXXXXXXX" alt="" align="right" style="margin-left:5px;"></p>
+              <p><img src="img/tools/XXXXXXXXXXXXXXXXXX" alt="" align="right" style="margin-left:5px;">ChatSecure is the recommended alternative to Conversations for iOS.</p>
               
               <p><a href="https://chatsecure.org" target="_blank"><button type="button" class="btn btn-warning">Website: chatsecure.org</button></a></p>
               <p>Available for: iOS</p>          
@@ -408,29 +365,29 @@
 
 			<a class="anchor" name="res"></a>
 			<div class="page-header">
-				<h1><a href="#res" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> Recommended Privacy Resources</h1>
+				<h1><a href="#res" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> Recommended Reading</h1>
 			</div>
 
 
 			<h3>Guides</h3>
 			<ul>
 				<li><a href="https://ssd.eff.org/"><strong>Surveillance Self-Defense by EFF</strong></a> - Guide to defending yourself from surveillance by using secure technology and developing careful practices.</li>
-				<li><a href="https://cryptoseb.pw/paper"><strong>The Crypto Paper</strong></a> - Privacy, Security and Anonymity for Every Internet User.</li>
 				<li><a href="https://emailselfdefense.fsf.org/en/"><strong>Email Self-Defense by FSF</strong></a> - A guide to fighting surveillance with GnuPG encryption.</li>				
-				<li><a href="https://www.bestvpn.com/the-ultimate-privacy-guide/"><strong>The Ultimate Privacy Guide</strong></a> - Excellent privacy guide written by the creators of the bestVPN.com website.</li>
-				<li><a href="https://www.ivpn.net/privacy-guides"><strong>IVPN Privacy Guides</strong></a> - These privacy guides explain how to obtain vastly greater freedom, privacy and anonymity through compartmentalization and isolation.</li>
-				<li><a href="http://fried.com/privacy"><strong>The Ultimate Guide to Online Privacy</strong></a> - Comprehensive "Ninja Privacy Tips" and 150+ tools.</li>
 			</ul>
+
+            <h3>OpSec (Operational Security)</h3>
+            <ul>
+                <li><a href="http://b3rn3d.herokuapp.com/blog/2014/01/22/burner-phone-best-practices/"><strong>Clandestine Mobile Phone Use (1)</strong></a></li>
+                <li><a href="http://grugq.github.io/blog/2014/02/10/a-fistful-of-surveillance/"><strong>Clandestine Mobile Phone Use (2)</strong></a></li>
+                <li><a href="http://b3rn3d.herokuapp.com/blog/2014/01/31/tools-to-evade-stylometrics/"><strong>Tools to evade stylometrics</strong></a></li>
+                <li><a href="http://grugq.github.io/blog/2013/12/21/codes-what-are-they-good-for/"><strong>Using Codes</strong></a></li>
+            </ul>
 
 			<h3>Information</h3>
 			<ul>
-				<li><a href="https://www.reddit.com/r/privacytoolsIO/wiki/index"><strong>r/privacytoolsIO Wiki</strong></a> - Our Wiki on reddit.com.</li>
-				<li><a href="https://www.grc.com/securitynow.htm"><strong>Security Now!</strong></a> - Weekly Internet Security Podcast by Steve Gibson and Leo Laporte.</li>
-				<li><a href="http://www.jupiterbroadcasting.com/show/techsnap/"><strong>TechSNAP</strong></a> - Weekly Systems, Network, and Administration Podcast. Every week TechSNAP covers the stories that impact those of us in the tech industry.</li>				
+                <li><a href="https://sii.transparencytoolkit.org/"><strong>Surveillance Industry Index</strong></a> - Database of surveillance products.</li>
 				<li><a href="https://keybase.io/"><strong>Keybase.io</strong></a> - Get a public key, safely, starting just with someone's social media username.</li>
 				<li><a href="https://freedom.press/"><strong>Freedom of the Press Foundation</strong></a> - Supporting and defending journalism dedicated to transparency and accountability since 2012.</li>
-				<li><a href="http://www.erfahrungen.com/mit/anonymisierung/t/"><strong>Erfahrungen.com</strong></a> - German review aggregator website of privacy related services.</li>
-				<li><a href="https://tosdr.org/"><strong>Terms of Service; Didn't Read</strong></a> - “I have read and agree to the Terms” is the biggest lie on the web. We aim to fix that.</li>
 			</ul>
 
 			<h3>Tools</h3>
