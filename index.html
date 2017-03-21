@@ -82,6 +82,7 @@
 					<!-- home icon in the navigation bar -->
 					<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
 
+                    <li><a href="#passwords">Passwords</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="buton" aria-expanded="false">OS<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -89,10 +90,10 @@
                             <li><a href="#os_install">Installation of Linux Mint</a></li>
                         </ul>
                     </li>
-
                     <li><a href="#browser">Browser</a></li>
                     <li><a href="#email">Email</a></li>
                     <li><a href="#jabber">Jabber</a></li>
+                    <li><a href="#delete">Secure Deletion</a></li>
                     <li><a href="#res">Recommended Reading</a></li>
 
 				</ul>
@@ -111,6 +112,46 @@
             <p>For a militant digital resistance!<img src="img/common/anarchy.png" style="color:red;"></span></br>Work in progress!</p>
 			<!-- end header just below the navigation bar -->
 		</div>
+
+<!-- Passwords -->
+
+<a class="anchor" name="passwords"></a>    
+      <div class="page-header">
+        <h1><a href="#os" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> Passwords</h1> 
+      </div>
+
+      <p>Having weak passwords defeats all encryption - it is obvious that you need to use strong passwords. But at the same time you should never use the same password for different purposes.</br>
+      We recommend you to have only a couple of strong passwords memorized, for things like disk encryption, password manager and gpg-key. All the other passwords (facebook, mail, ...) can be stored in a password manager like KeePassX. As method for generating strong passwords you can use Diceware.</p>
+
+      <h3>Examples for bad passwords:</h3>
+      <ul>
+          <li>:LOL1313le</li>
+          <li>Coneyisland9/</li>
+          <li>momof3g8kids</li>
+          <li>1368555av</li>
+          <li>n3xtb1gth1ng</li>
+          <li>qeadzcwrsfxv1331</li>
+          <li>m27bufford</li>
+      </ul>
+
+      <h3>Generating strong passwords using Diceware method</h3>
+      <p>You need a dice and a big wordlist. (<a href="https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt">This</a> is a new good wordlist by <abbr title="Electronic Frontier Fondation" class="initialism">EFF</abbr>)
+      To create your password stick seven (or more) random words from this list together. For each word you have to roll your dice five times, write down the resulting digits and look them up in the wordlist.</p>
+      <p>This creates passwords like <samp>siblingsurveybullfrogjestercobwebduvettasting</samp>.</p>
+
+      <div class="alert alert-info">If you have a Tails stick around you can generate Diceware passwords faster without rolling dices:
+          <ol>
+              <li>Start or restart Tails in non-persistent mode.</li>
+              <li>Open the Terminal. Then copy and paste the following code into the Terminal. To confirm press <kbd>Enter</kbd>.</br>
+                  <code>curl --socks5-hostname 127.0.0.1:9050 -s https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt | shuf -n 7 -r --random-source /dev/random</code></li>
+              <li><strong>Important:</strong> Shut down Tails immediately without doing anything else.</li>
+          </ol>
+      </div>
+
+      
+      <h3>Installing KeePassX on Linux Mint</h3>
+      
+
 
 <!-- PC Operating Systems -->
 
@@ -193,8 +234,9 @@
         <h1><a href="#email" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a>Browser</h1> 
       </div>
 
-      <h3>Installing Tor Browser Launcher on Linux Mint</h3>
+      <p>[TODO]</p>
 
+      <h3>Installing Tor Browser Launcher on Linux Mint</h3>
       <ol>
             <li>Open the Terminal <img src="img/linuxmint/linuxmint_terminal.png"> (Linux Mint: in the bar on the bottom left). Then type the following statements and press <kbd>Enter</kbd> after each one.</li>
             <ol>
@@ -203,7 +245,23 @@
                 <li><code>sudo apt-get install torbrowser-launcher</code></li>
             </ol>
       </ol>
+
+      <h3>Using NoScript (with Tor Browser)</h3>
+      <p>JavaScript is a technology most websites use to show dynamic content. But having JavaScript enabled makes your browser more vulnerable to attacks which could reveal your real IP and compromise your computer.</br>
+      Because of that we recommend that you disable JavaScript in the Tor Browser and only enable it temporarily for websites you trust.</p>
       
+      <ol>
+          <li>Click the <img src="img/torbrowser/torbrowser_enabled.png"> Tor icon in the address bar and click <samp>Security Settings</samp>.</li>
+          <li>Turn the Slider to <samp>High</samp>.</li>
+      </ol>
+
+      <p>If you want to enable JavaScript temporarily for the website you are visiting:</p>
+      
+      <ul>
+          <li>Click the <img src="img/torbrowser/noscript_enabled.png"> NoScript icon in the address bar and select <samp>Temporarily allow all this page</samp>.</li>
+      </ul>
+
+
 
 <!-- Email + PGP -->
 
@@ -249,7 +307,6 @@
           <ul>
               <li><a href="https://addons.mozilla.org/en-US/thunderbird/addon/enigmail">Enigmail</a> - PGP message encryption.</li>
               <li><a href="https://addons.mozilla.org/en-US/thunderbird/addon/torbirdy">TorBirdy</a> - Run Thunderbird over the Tor anonymity network.</li>
-              <li><a href="https://addons.mozilla.org/en-US/thunderbird/addon/allow-html-temp">Allow HTML Temp</a> - Deactivates default HTML email preview and adds a button to make it toggleable.</li>
           </ul>
           <li>Restart Thunderbird for the changes to take effect.</li>
       </ol>
@@ -383,48 +440,59 @@
         </div><!-- /.col-sm-4 -->  
       </div>      
 
+<!-- Jabber -->
 
-			<a class="anchor" name="res"></a>
-			<div class="page-header">
-				<h1><a href="#res" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> Recommended Reading</h1>
-			</div>
+<a class="anchor" name="delete"></a>    
+      <div class="page-header">
+        <h1><a href="#delete" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> Secure Deletion</h1> 
+      </div>
+
+      <div class="alert alert-danger">It is currently not possible to delete files on USB-Sticks, SD-Cards or Solid State Disks (SSD).</br>Therefore it is super important to only store encrypted data on these storage devices.</div>
 
 
-			<h3>Guides</h3>
-			<ul>
-				<li><a href="https://ssd.eff.org/"><strong>Surveillance Self-Defense by EFF</strong></a> - Guide to defending yourself from surveillance by using secure technology and developing careful practices.</li>
-				<li><a href="https://emailselfdefense.fsf.org/en/"><strong>Email Self-Defense by FSF</strong></a> - A guide to fighting surveillance with GnuPG encryption.</li>				
-			</ul>
+<!-- Recommended Reading -->
 
-            <h3>OpSec (Operational Security)</h3>
-            <ul>
-                <li><a href="http://b3rn3d.herokuapp.com/blog/2014/01/22/burner-phone-best-practices/"><strong>Clandestine Mobile Phone Use (1)</strong></a></li>
-                <li><a href="http://grugq.github.io/blog/2014/02/10/a-fistful-of-surveillance/"><strong>Clandestine Mobile Phone Use (2)</strong></a></li>
-                <li><a href="http://b3rn3d.herokuapp.com/blog/2014/01/31/tools-to-evade-stylometrics/"><strong>Tools to evade stylometrics</strong></a></li>
-                <li><a href="http://grugq.github.io/blog/2013/12/21/codes-what-are-they-good-for/"><strong>Using Codes</strong></a></li>
-            </ul>
+<a class="anchor" name="res"></a>
+<div class="page-header">
+    <h1><a href="#res" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a> Recommended Reading</h1>
+</div>
 
-			<h3>Information</h3>
-			<ul>
-                <li><a href="https://sii.transparencytoolkit.org/"><strong>Surveillance Industry Index</strong></a> - Database of surveillance products.</li>
-				<li><a href="https://freedom.press/"><strong>Freedom of the Press Foundation</strong></a> - Supporting and defending journalism dedicated to transparency and accountability since 2012.</li>
-			</ul>
 
-			<h3>Tools</h3>
-			<ul>
-                <li><a href="http://www.fakenamegenerator.com/"><strong>Fake Name Generator</strong></a> - Generate a random identity, with full address, phone number and more.</li>
-				<li><a href="http://ipleak.net/"><strong>ipleak.net</strong></a> - IP/DNS Detect - What is your IP, what is your DNS, what informations you send to websites.</li>
-				<li><a href="https://prism-break.org/"><strong>PRISM Break</strong></a> - We all have a right to privacy, which you can exercise today by encrypting your communications and ending your reliance on proprietary services.</li>
-				<li><a href="https://securityinabox.org/"><strong>Security in-a-Box</strong></a> - A guide to digital security for activists and human rights defenders throughout the world.</li>
-				<li><a href="http://alternativeto.net/?license=opensource&platform=self-hosted&sort=likes"><strong>AlternativeTo.net</strong></a> - Great collection of open source online and self-hosted software sorted by likes.</li>
-				<li><a href="https://securedrop.org/"><strong>SecureDrop</strong></a> - An open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources. It was originally created
-					by the late Aaron Swartz and is currently managed by Freedom of the Press Foundation.</li>
-				<li><a href="https://pack.resetthenet.org/"><strong>Reset The Net - Privacy Pack</strong></a> - Help fight to end mass surveillance. Get these tools to protect yourself and your friends.</li>
-				<li><a href="http://www.secfirst.org/"><strong>Security First</strong></a> - Umbrella is an Android app that provides all the advice needed to operate safely in a hostile environment.</li>
-			</ul>
+<h3>Guides</h3>
+<ul>
+    <li><a href="https://ssd.eff.org/"><strong>Surveillance Self-Defense by EFF</strong></a> - Guide to defending yourself from surveillance by using secure technology and developing careful practices.</li>
+    <li><a href="https://emailselfdefense.fsf.org/en/"><strong>Email Self-Defense by FSF</strong></a> - A guide to fighting surveillance with GnuPG encryption.</li>				
+</ul>
 
-		</p>
-	</div>
+<h3>OpSec (Operational Security)</h3>
+<ul>
+    <li><a href="http://b3rn3d.herokuapp.com/blog/2014/01/22/burner-phone-best-practices/"><strong>Clandestine Mobile Phone Use (1)</strong></a></li>
+    <li><a href="http://grugq.github.io/blog/2014/02/10/a-fistful-of-surveillance/"><strong>Clandestine Mobile Phone Use (2)</strong></a></li>
+    <li><a href="http://b3rn3d.herokuapp.com/blog/2014/01/31/tools-to-evade-stylometrics/"><strong>Tools to evade stylometrics</strong></a></li>
+    <li><a href="http://grugq.github.io/blog/2013/12/21/codes-what-are-they-good-for/"><strong>Using Codes</strong></a></li>
+</ul>
+
+<h3>Information</h3>
+<ul>
+    <li><a href="https://sii.transparencytoolkit.org/"><strong>Surveillance Industry Index</strong></a> - Database of surveillance products.</li>
+    <li><a href="https://freedom.press/"><strong>Freedom of the Press Foundation</strong></a> - Supporting and defending journalism dedicated to transparency and accountability since 2012.</li>
+</ul>
+
+<h3>Tools</h3>
+<ul>
+    <li><a href="http://www.fakenamegenerator.com/"><strong>Fake Name Generator</strong></a> - Generate a random identity, with full address, phone number and more.</li>
+    <li><a href="http://ipleak.net/"><strong>ipleak.net</strong></a> - IP/DNS Detect - What is your IP, what is your DNS, what informations you send to websites.</li>
+    <li><a href="https://prism-break.org/"><strong>PRISM Break</strong></a> - We all have a right to privacy, which you can exercise today by encrypting your communications and ending your reliance on proprietary services.</li>
+    <li><a href="https://securityinabox.org/"><strong>Security in-a-Box</strong></a> - A guide to digital security for activists and human rights defenders throughout the world.</li>
+    <li><a href="http://alternativeto.net/?license=opensource&platform=self-hosted&sort=likes"><strong>AlternativeTo.net</strong></a> - Great collection of open source online and self-hosted software sorted by likes.</li>
+    <li><a href="https://securedrop.org/"><strong>SecureDrop</strong></a> - An open-source whistleblower submission system that media organizations can use to securely accept documents from and communicate with anonymous sources. It was originally created
+        by the late Aaron Swartz and is currently managed by Freedom of the Press Foundation.</li>
+    <li><a href="https://pack.resetthenet.org/"><strong>Reset The Net - Privacy Pack</strong></a> - Help fight to end mass surveillance. Get these tools to protect yourself and your friends.</li>
+    <li><a href="http://www.secfirst.org/"><strong>Security First</strong></a> - Umbrella is an Android app that provides all the advice needed to operate safely in a hostile environment.</li>
+</ul>
+
+</p>
+</div>
 
 	<!-- add jQuery, Bootstrap, Sortable, and tooltip libraries  -->
     <!-- <script src="js/jquery-1.11.2.min.js"></script> -->
