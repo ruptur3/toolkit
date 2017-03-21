@@ -9,8 +9,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=1024">
-	<meta name="keywords" content="privacy, anonymity, privacy tools, surveillance, encryption, edward snowden, nsa, tor, bitcoin">
-	<meta name="description" content="You are being watched! Knowledge, encryption and privacy tools to protect you against global mass surveillance.">
+	<meta name="keywords" content="privacy, anonymity, privacy tools, surveillance, encryption, activists, nsa, tor, opsec">
+	<meta name="description" content="For a militant digital resistance!">
 
 	<!-- title -->
 	<title>Activists Toolkit</title>
@@ -50,14 +50,14 @@
 <![endif]-->
 
 	<!-- Open Graph Protocol tags for SEO -->
-	<meta property="og:title" content="Privacy Tools | Encryption against global mass surveillance" />
+	<meta property="og:title" content="Activists toolbox" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.privacytools.io/" />
+	<meta property="og:url" content="https://ruptur3.github.io/toolkit/" />
 	<meta property="og:image" content="https://www.privacytools.io/img/layout/ogimage.jpg" />
-	<meta property="og:description" content="You are being watched! Knowledge, encryption and privacy tools to protect you against global mass surveillance."
+	<meta property="og:description" content="For a militant digital resistance!"
 	/>
 	<meta property="og:locale" content="en_US" />
-	<meta property="og:site_name" content="privacytools.io" />
+	<meta property="og:site_name" content="ruptur3.github.io/toolkit" />
 
 </head>
 
@@ -243,7 +243,11 @@
         <h1><a href="#email" class="titleanchor"><span class="glyphicon glyphicon-link"></span></a>Browser</h1> 
       </div>
 
-      <p>[TODO]</p>
+      <p>Browsing with the Tor Browser hides your browsers fingerprint and your computers IP address, which authorities could use to get your real address. But you still have to take care to not accidentally reveal your identity by posting personal information on the internet. Searching for a place near to your real location on google maps can in certain circumstances be enough to reveal your identity.</p>
+      <p>You can get a new anonymous identity by clicking the <img src="img/torbrowser/torbrowser_enabled.png"> Tor icon in the address bar and selecting <samp>New Identity</samp>. We recommend you to do this relativly often, at least each time the subject of your internet research changes. </br>(From planning a direct action to reading the news for example.)</p>
+      <div class="alert alert-danger">Tor Browser can only protect your real identity if your computer is safe. Keep all of your software up-to-date!</div>
+      <!-- <p><strong>Example:</strong> Alice opens Tor Browser and starts researching the surroundings of a building, she is planning a direct action. She uses the Tor Browser only for this subject. After she finished her research she creates a new identity (see above) and looks for the movies running tonight next to her location.</br> -->
+      <!-- If she had done both things without renewing the Tor Identity her real identity would be connected to the direct action and law enforcement could arrest her!</p> -->
 
       <h3>Installing Tor Browser Launcher on Linux Mint</h3>
       <ol>
@@ -253,6 +257,8 @@
                 <li><code>sudo apt-get update</code></li>
                 <li><code>sudo apt-get install torbrowser-launcher</code></li>
             </ol>
+            <li>Click the <img src="img/torbrowser/torbrowser_enabled.png"> Tor icon in the address bar and click <samp>Security Settings</samp>.</li>
+            <li>Turn the Slider to <samp>Medium</samp> (for <samp>High</samp> continue reading).</li>
       </ol>
 
       <h3>Using NoScript (with Tor Browser)</h3>
@@ -261,7 +267,7 @@
       
       <ol>
           <li>Click the <img src="img/torbrowser/torbrowser_enabled.png"> Tor icon in the address bar and click <samp>Security Settings</samp>.</li>
-          <li>Turn the Slider to <samp>High</samp>.</li>
+          <li>Turn the Slider to <samp>High</samp>. This disables JavaScript on all websites.</li>
       </ol>
 
       <p>If you want to enable JavaScript temporarily for the website you are visiting:</p>
