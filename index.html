@@ -277,7 +277,7 @@
       </ul>
 
       <h3>Firefox (without Tor)</h3>
-      <div class="alert alert-warning">You should use Firefox without Tor only for logging in to services directly connected to your real identity (facebook, online banking...) or watching movies.</div>
+      <div class="alert alert-warning">You should use Firefox without Tor only for logging in to services directly connected to your real identity (facebook, online banking...) or for trivial activities which need a high internet bandwith, like streaming movies.</div>
       <p>Install these addons to make Firefox a bit safer to use:</p>
       <ul>
           <li><strong><a href="https://www.eff.org/https-everywhere">HTTPS Everywhere</a></strong></li>
@@ -289,8 +289,11 @@
       <p>Additionally you can install a custom Firefox profile, for example the one by <a href="https://github.com/CrisBRM/user.js">CrisBRM</a>.</p>
       <ol>
           <li>Close all instances of Firefox Browser</li>
-          <li><p>Open the Terminal <img src="img/linuxmint/linuxmint_terminal.png"> (Linux Mint: in the bar on the bottom left). Then type (or copy) the following code into the Terminal. To confirm press <kbd>Enter</kbd>.</p>
-              <code>curl -s https://raw.githubusercontent.com/CrisBRM/user.js/master/user.js &gt; ~/.mozilla/firefox/*.default/user.js</code></li>
+          <li><p>Open the Terminal <img src="img/linuxmint/linuxmint_terminal.png"> (Linux Mint: in the bar on the bottom left). Then type (or copy) the following statements into the Terminal and press <kbd>Enter</kbd> after each one..</p>
+              <ol>
+                  <li><code>cd ~/.mozilla/firefox/*.default</code></li>
+                  <li><code>wget https://raw.githubusercontent.com/CrisBRM/user.js/master/user.js</code></li>
+              </ol>
       </ol>
 
 
