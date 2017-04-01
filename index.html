@@ -406,7 +406,13 @@
                 <li><code>gpg --keyserver keys.gnupg.net --recv 6DA77FAA</code></li>
                 <li><code>gpg --verify sha256sums-signed-build.txt.asc</code></br>The output should contain the line <samp>gpg: Good signature from "Sukhbir Singh &lt;azadi@riseup.net&gt;"</samp></br>The fingerprint in the last line should match <samp>D397 5427 A5BA 8450 A1BE B01C 8B00 6DA7 7FAA</samp></li>
                 <li><code>sha256sum --ignore-missing -c sha256sums-signed-build.txt | grep ok</code></br>The output should end with <samp>OK</samp></li>
-                </br><div class="alert alert-info">You have now verified that your download of Tor Messenger has not been manipulated. If some of the commands produced not the expected output it might be possible that you are being attacked. In that case please try it again from a different internet access point.</div>
+                </br><div class="alert alert-info"><p>You have now verified that your download of Tor Messenger has not been manipulated. If some of the commands produced not the expected output it might be possible that you are being attacked.</p>
+                    <p>In that case delete all downloaded files by typing the commands:</p>
+                    <ol>
+                        <li><code>rm tor-messenger*</code></li>
+                        <li><code> gpg --delete-keys --yes --batch 6DA77FAA</code></li>
+                    </ol>
+                    <p>Then try everything again from a different location or internet access point.</p></div>
                 <li><code>tar -xvaf tor-messenger* -C ~</code></li>
                 <li><code>cd ~/tor-messenger</code></li>
                 <li><code>./start-tor-messenger.desktop --register-app</code></li>
